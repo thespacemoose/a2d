@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>a2d</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="js/app.js"></script>
+	</head>
+	<body>
+		<header class="pad">
+			<div class="title clearfix">
+				<h1>A2D</h1>
+				<div class="searchbox">
+				   <input type="text" placeholder="Search..." required>
+                   <input type="button" value="Search">
+                </div>
+				<h2>Debate anything</h2>
+			</div>
+		</header>
+		<div class="content clearfix pad">
+			<div class="leftcol clearfix">
+				<div class="topicstitle">Topics</div>
+				<ul class="topicsheadings">
+					<li><a href="#">Politics</a></li>
+					<li><a href="#">Technology</a></li>
+					<li><a href="#">Business</a></li>
+					<li><a href="#">Society</a></li>
+					<li><a href="#">Culture</a></li>
+				</ul>
+
+			</div>
+			<div class="debatetopic clearfix">
+				<h3 id="topic-title">This is where the debate topic goes!</h3>
+				<div class="debate-main">
+					<div class="user-submission">
+						<div id="canYouAnswer">Can you contribute to this debate?
+							<div class="answerButtonsBox">
+								<button class="answerButton" id="proAnswerReveal">Answer Pro</button>
+								<button class="answerButton" id="conAnswerReveal">Answer Con</button>
+							</div>	
+						</div>
+						<form class="answerBoxes" id="proAnswerBoxes">
+							<textarea class="userTitle proTextArea" id="proTitleInput" type="text" placeholder="What is your point?" required></textarea>
+							<textarea class="userArgument proTextArea" id="proArgumentInput" type="text" name="Text1" cols="40" rows="5" placeholder="And your PRO argument is?" required></textarea>
+							<button class="userSubmit proUserSubmit">Submit</button>
+						</form>
+						<form class="answerBoxes" id="conAnswerBoxes">
+							<textarea class="userTitle conTextArea" id="conTitleInput" type="text" placeholder= "What is your point?" required></textarea>
+							<textarea class="userArgument conTextArea" id="conArgumentInput" type="text" name="Text1" cols="40" rows="5" placeholder="And your CON argument is?" required></textarea>
+							<button class="userSubmit conUserSubmit">Submit</button>
+						</form>
+					</div>	
+					<div class="opin pro">
+						<h4>Pro</h4>
+					</div>
+					<div class="opin con">
+						<h4>Con</h4>
+					</div>
+				</div>
+			</div>
+			<div class="rightcol"></div>
+		</div>
+		<footer>
+			
+		</footer>
+	</body>
+</html>
