@@ -195,6 +195,10 @@ h5 {
 }
 
 form {
+<<<<<<< HEAD
+=======
+  height: 200px;
+>>>>>>> gh-pages
   background-color: white;
 }
 textarea {
@@ -211,6 +215,7 @@ textarea {
   width: 10%;
   height: 23px;
 }
+<<<<<<< HEAD
 #startNew {
   display: inline-block;
   width: 250px;
@@ -244,6 +249,8 @@ textarea {
   display: none;  
 }
 
+=======
+>>>>>>> gh-pages
 .answerButton {
   display: inline-block;
   width: 20%;
@@ -285,6 +292,10 @@ textarea {
 .answerClose {
   display: none;
 }
+<<<<<<< HEAD
 .formOpen {
   display: inherit;
 }
+=======
+
+>>>>>>> gh-pages

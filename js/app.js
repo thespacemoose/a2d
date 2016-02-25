@@ -11,6 +11,7 @@ $( document ).ready(function() {
 		$("#conAnswerBoxes").toggleClass("answerOpen");
 	});
 
+<<<<<<< HEAD
 
 	$("#startNew").click(function(){
 		console.log("trying to open");
@@ -21,6 +22,10 @@ $( document ).ready(function() {
 	// CREATE A REFERENCE TO FIREBASE
 	var argueRef = new Firebase('https://blistering-heat-1060.firebaseio.com/');
 	var titleRef = new Firebase('https://a2dname.firebaseio.com')
+=======
+	// CREATE A REFERENCE TO FIREBASE
+	var argueRef = new Firebase('https://blistering-heat-1060.firebaseio.com/');
+>>>>>>> gh-pages
 
 	// REGISTER DOM ELEMENTS FOR PRO
 	var proTitleField = $('#proTitleInput');
@@ -34,6 +39,7 @@ $( document ).ready(function() {
   	var conArguementTitleList = $('#conPastArgumentsTitle');
   	var conArguementContentList = $('#conPastArguments');
 
+<<<<<<< HEAD
 	$("#topicTitleButton").click(function(e){
 		  	e.preventDefault();
 		  	console.log("user trying to change topic")
@@ -56,6 +62,14 @@ $( document ).ready(function() {
 
    // LISTEN FOR KEYPRESS EVENT & SAVE DATA TO FIREBASE AND EMPTY FIELD
 
+=======
+
+
+
+
+
+   // LISTEN FOR KEYPRESS EVENT
+>>>>>>> gh-pages
 	$("#proAnswerBoxes").submit(function(e){
     			
       	e.preventDefault();
@@ -90,7 +104,16 @@ $( document ).ready(function() {
 	    argueRef.push({contitle: conUserTitle, conargue: conUserArgument});
 	   	conArguementField.val("");
 	   	conTitleField.val("")
+<<<<<<< HEAD
 	});	     
+=======
+	});
+
+
+      //SAVE DATA TO FIREBASE AND EMPTY FIELD
+	     
+
+>>>>>>> gh-pages
 
 		// Add a callback that is triggered for each chat message.
 		argueRef.on('child_added', function (snapshot) {
@@ -122,6 +145,7 @@ $( document ).ready(function() {
 	    		$(".con").append(argumentElement+conArguementTitleElement+conTitle+closeTitle+conArguementContentElement+conArguement+closeArgumentP+closeArgumentElement);
 
 	    	}
+<<<<<<< HEAD
 		});
 		titleRef.on('child_added', function (snapshotTitle) {
 			var dataTitle = snapshotTitle.val();
@@ -134,6 +158,21 @@ $( document ).ready(function() {
 
 
 
+=======
+ 	    	
+
+	    	//CREATE ELEMENTS MESSAGE & SANITIZE TEXT
+
+	   
+	    	// var uniqueArgumentId = 
+	    	// $(".proPastArgumentsTitle").html("TEST CONTENT");
+	    	// $(".proPastArguments").html(proArguement);
+	    	// nameElement.text(username);
+	    	// messageElement.text(message).prepend(nameElement);
+
+
+	});
+>>>>>>> gh-pages
 });
 	
 
