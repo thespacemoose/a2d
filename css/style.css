@@ -195,7 +195,10 @@ h5 {
 }
 
 form {
+<<<<<<< HEAD
+=======
   height: 200px;
+>>>>>>> gh-pages
   background-color: white;
 }
 textarea {
@@ -212,6 +215,42 @@ textarea {
   width: 10%;
   height: 23px;
 }
+<<<<<<< HEAD
+#startNew {
+  display: inline-block;
+  width: 250px;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: gray; 
+  margin-left: 20px;
+  margin-top: 25px;
+  }
+
+#topicTitleButton { 
+  display: inline-block;
+  width: 65px;
+  height: 23px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: gray; 
+  }
+
+#topicTitleInputArea  {
+  height: 30px;
+  width: 650px;
+  font-family: serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  }
+.topicTitleForm {
+  display: none;  
+}
+
+=======
+>>>>>>> gh-pages
 .answerButton {
   display: inline-block;
   width: 20%;
@@ -253,4 +292,10 @@ textarea {
 .answerClose {
   display: none;
 }
+<<<<<<< HEAD
+.formOpen {
+  display: inherit;
+}
+=======
 
+>>>>>>> gh-pages

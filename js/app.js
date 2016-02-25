@@ -11,8 +11,21 @@ $( document ).ready(function() {
 		$("#conAnswerBoxes").toggleClass("answerOpen");
 	});
 
+<<<<<<< HEAD
+
+	$("#startNew").click(function(){
+		console.log("trying to open");
+		$(".topicTitleForm").toggleClass("formOpen");
+	});
+
+
 	// CREATE A REFERENCE TO FIREBASE
 	var argueRef = new Firebase('https://blistering-heat-1060.firebaseio.com/');
+	var titleRef = new Firebase('https://a2dname.firebaseio.com')
+=======
+	// CREATE A REFERENCE TO FIREBASE
+	var argueRef = new Firebase('https://blistering-heat-1060.firebaseio.com/');
+>>>>>>> gh-pages
 
 	// REGISTER DOM ELEMENTS FOR PRO
 	var proTitleField = $('#proTitleInput');
@@ -26,12 +39,37 @@ $( document ).ready(function() {
   	var conArguementTitleList = $('#conPastArgumentsTitle');
   	var conArguementContentList = $('#conPastArguments');
 
+<<<<<<< HEAD
+	$("#topicTitleButton").click(function(e){
+		  	e.preventDefault();
+		  	console.log("user trying to change topic")
+		  	// return confirm("DO YOU REALLY WANT TO DO THIS? This will erase the current debate and all arguments associated with it!!!");
+		  	$("h3").empty();
+		   	$(".argumentElement").remove();
+		  	var newTopic = $("#topicTitleInputArea").val();
+		  	console.log(newTopic);
+		  	// $("h3").append(newTopic);
+		  	$(".argument").remove();
+		  	$("#topicTitleInputArea").val("");
+		  	$(".topicTitleForm").removeClass("formOpen");
+
+		  	titleRef.set(null);
+		  	titleRef.push({debateTitle: newTopic});
+		  	argueRef.set(null);
+		});
+
+
+
+   // LISTEN FOR KEYPRESS EVENT & SAVE DATA TO FIREBASE AND EMPTY FIELD
+
+=======
 
 
 
 
 
    // LISTEN FOR KEYPRESS EVENT
+>>>>>>> gh-pages
 	$("#proAnswerBoxes").submit(function(e){
     			
       	e.preventDefault();
@@ -66,12 +104,16 @@ $( document ).ready(function() {
 	    argueRef.push({contitle: conUserTitle, conargue: conUserArgument});
 	   	conArguementField.val("");
 	   	conTitleField.val("")
+<<<<<<< HEAD
+	});	     
+=======
 	});
 
 
       //SAVE DATA TO FIREBASE AND EMPTY FIELD
 	     
 
+>>>>>>> gh-pages
 
 		// Add a callback that is triggered for each chat message.
 		argueRef.on('child_added', function (snapshot) {
@@ -103,6 +145,20 @@ $( document ).ready(function() {
 	    		$(".con").append(argumentElement+conArguementTitleElement+conTitle+closeTitle+conArguementContentElement+conArguement+closeArgumentP+closeArgumentElement);
 
 	    	}
+<<<<<<< HEAD
+		});
+		titleRef.on('child_added', function (snapshotTitle) {
+			var dataTitle = snapshotTitle.val();
+
+			var databaseTitle = dataTitle.debateTitle;
+			console.log(databaseTitle);
+			$("h3").append(databaseTitle);
+		});	
+
+
+
+
+=======
  	    	
 
 	    	//CREATE ELEMENTS MESSAGE & SANITIZE TEXT
@@ -116,6 +172,7 @@ $( document ).ready(function() {
 
 
 	});
+>>>>>>> gh-pages
 });
 	
 
