@@ -28,17 +28,17 @@ Developer @GA in NYC
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 .alignright {
-	float: right;
-	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
 }
 
 .alignleft {
-	float: left;
-	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
 /******************************************
@@ -67,8 +67,8 @@ body {
 
 /* Center the container */
 .container {
-	width: 1000px;
-	margin: auto;
+  width: 1000px;
+  margin: auto;
   padding-top: 5em;
 }
 
@@ -212,6 +212,39 @@ textarea {
   width: 10%;
   height: 23px;
 }
+#startNew {
+  display: inline-block;
+  width: 250px;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: gray; 
+  margin-left: 20px;
+  margin-top: 25px;
+  }
+
+#topicTitleButton { 
+  display: inline-block;
+  width: 65px;
+  height: 23px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: gray; 
+  }
+
+#topicTitleInputArea  {
+  height: 30px;
+  width: 650px;
+  font-family: serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  }
+.topicTitleForm {
+  display: none;  
+  height: 80px;
+}
 .answerButton {
   display: inline-block;
   width: 20%;
@@ -220,7 +253,6 @@ textarea {
   font-size: 14px;
   font-family: sans-serif;
   color: white; 
-  ;
 }
 .answerButtonsBox {
   padding-top : 10px;
@@ -253,4 +285,6 @@ textarea {
 .answerClose {
   display: none;
 }
-
+.formOpen {
+  display: inherit;
+}
