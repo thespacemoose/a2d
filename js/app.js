@@ -44,7 +44,6 @@ $( document ).ready(function() {
 		   	$(".argumentElement").remove();
 		  	var newTopic = $("#topicTitleInputArea").val();
 		  	console.log(newTopic);
-		  	// $("h3").append(newTopic);
 		  	$(".argument").remove();
 		  	$("#topicTitleInputArea").val("");
 		  	$(".topicTitleForm").removeClass("formOpen");
@@ -93,9 +92,7 @@ $( document ).ready(function() {
 	    argueRef.push({contitle: conUserTitle, conargue: conUserArgument});
 	   	conArguementField.val("");
 	   	conTitleField.val("")
-
-	});
-
+	});	     
 
       //SAVE DATA TO FIREBASE AND EMPTY FIELD
 	     
