@@ -44,6 +44,10 @@ $( document ).ready(function() {
 		   	$(".argumentElement").remove();
 		  	var newTopic = $("#topicTitleInputArea").val();
 		  	console.log(newTopic);
+<<<<<<< HEAD
+=======
+		  	// $("h3").append(newTopic);
+>>>>>>> origin/gh-pages
 		  	$(".argument").remove();
 		  	$("#topicTitleInputArea").val("");
 		  	$(".topicTitleForm").removeClass("formOpen");
@@ -93,6 +97,11 @@ $( document ).ready(function() {
 	   	conArguementField.val("");
 	   	conTitleField.val("")
 	});	     
+<<<<<<< HEAD
+=======
+	});
+
+>>>>>>> origin/gh-pages
 
       //SAVE DATA TO FIREBASE AND EMPTY FIELD
 	     
@@ -136,6 +145,14 @@ $( document ).ready(function() {
 			console.log(databaseTitle);
 			$("h3").append(databaseTitle);
 		});	
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> origin/gh-pages
 
 
 
