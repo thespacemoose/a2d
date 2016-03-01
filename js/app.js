@@ -93,7 +93,7 @@ $( document ).ready(function() {
 	    argueRef.push({contitle: conUserTitle, conargue: conUserArgument});
 	   	conArguementField.val("");
 	   	conTitleField.val("")
-	});	     
+
 	});
 
 
