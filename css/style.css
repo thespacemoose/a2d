@@ -243,10 +243,7 @@ textarea {
   }
 .topicTitleForm {
   display: none;  
-<<<<<<< HEAD
   height: 80px;
-=======
->>>>>>> origin/gh-pages
 }
 .answerButton {
   display: inline-block;
