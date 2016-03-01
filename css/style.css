@@ -242,8 +242,9 @@ textarea {
   margin-bottom: 10px;
   }
 .topicTitleForm {
-  display: none;  
-  height: 80px;
+  display: none;     
+  height: 115px;
+
 }
 .answerButton {
   display: inline-block;
@@ -287,4 +288,11 @@ textarea {
 }
 .formOpen {
   display: inherit;
+}
+#warning {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  color: red;
+  padding-bottom: 10px;
 }
